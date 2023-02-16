@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Map of Stanford University</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #mapFrame {
+            border: 20px solid pink;
+            overflow: hidden;
+            width: 800px;
+            height: 600px;
+        }
+
+        /* #map {
+                width: auto;
+                height: auto;
+                left: 28px;
+                top: 28px;
+            } */
+
+        #navigation {
+            justify-content: left;
+            margin: 10px;
+            margin-top: 20px;
+        }
+
+        #navButtons {
+
+            margin-top: 15px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        #up {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            margin: 2px;
+        }
+
+        #left {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            margin: 2px;
+        }
+
+        #right {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            margin: 2px;
+        }
+
+        #down {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            margin: 2px;
+        }
+
+        #plus-minus {
+            display: flex;
+            justify-content: center;
+        }
+
+        #plus {
+            margin-right: 5px;
+        }
+
+        #nsewNav {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="mapFrame">
+            <img id="map" alt="map" src="map-s.gif">
+        </div>
+        <div id="navigation">
+            <div id="plus-minus">
+                <input type="button" value="+" id="plus">
+                <input type="button" value="-" id="minus">
+            </div>
+            <div id="nsewNav">
+                <div id="navButtons">
+                    <input type="button" value=&#11014; id="up">
+                    <input type="button" value=&#10145; id="right">
+                    <input type="button" value=&#11013; id="left">
+                    <input type="button" value=&#11015; id="down">
+                </div>
+            </div>
+
+        </div>
+        <!-- <h1 id="title">Map of Stanford University</h1> -->
+    </div>
+    <script src="stanfordMaps.js"></script>
+</body>
+
+</html>

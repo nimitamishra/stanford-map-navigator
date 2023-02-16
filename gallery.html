@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Stanford Gallery</title>
+	<style>
+		#caption {
+			padding: 10px;
+			box-sizing: border-box;
+			color: white;
+			font-size: 14pt;
+			font-family: sans-serif;
+			background-color: #008800;
+			opacity: 0.5;
+		}
+		#container {
+			display: flex;
+			justify-content: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="photoSection">
+			<img id='photo' src='memchu.jpg' alt='photo' />
+			<div id="caption">
+				Stanford Memorial Church - the church used to have an 80' bell tower, which fell in the 1906 earthquake.
+			</div>
+			<div id="forwardOverlay"></div>
+			<div id="backwardOverlay"></div>
+		</div>
+	</div>
+
+	<script src="gallery.js"></script>
+</body>
+
+</html>
